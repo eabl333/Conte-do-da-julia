@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assinatura Premium | Criadora de Conteúdo</title>
+    <title>Assinatura Premium | Julia</title>
     
-    <!-- Google Fonts Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Ícones -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
     <style>
@@ -54,11 +52,7 @@
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+        .logo { font-size: 1.8rem; font-weight: 700; letter-spacing: 1px; }
         .logo span { color: var(--primary-color); }
 
         .nav-links {
@@ -74,7 +68,6 @@
             transition: color 0.3s ease;
         }
         .nav-links a:hover { color: var(--primary-light); }
-
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
 
         /* === Seções e Utilitários === */
@@ -134,10 +127,7 @@
         }
         .hero-img:hover { transform: scale(1.05); }
 
-        .hero-text h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-        }
+        .hero-text h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
         .hero-description { display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem; }
         .hero-description i { color: var(--primary-color); margin-right: 0.5rem; }
@@ -272,117 +262,6 @@
         .plan-benefits li { margin: 0.8rem 0; display: flex; align-items: center; gap: 0.8rem; }
         .plan-benefits i { color: var(--primary-color); }
 
-        .btn-buy {
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.2rem;
-        }
-
-        /* === Modal de Pagamento === */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(5px);
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-            animation: fadeIn 0.3s;
-        }
-        .modal.active { display: flex; }
-
-        .modal-content {
-            background: var(--bg-card);
-            width: 90%;
-            max-width: 600px;
-            max-height: 90vh;
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid #333;
-            position: relative;
-            overflow-y: auto;
-            animation: slideUp 0.4s;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 2rem;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-        .close-modal:hover { color: #fff; }
-
-        .modal-content h2 { text-align: center; margin-bottom: 2rem; color: var(--primary-light); }
-
-        .qr-main-container {
-            background: #fff;
-            padding: 1rem;
-            border-radius: 12px;
-            text-align: center;
-            margin: 1.5rem 0;
-        }
-        .qr-main-container h3 { color: #333; }
-        .qr-main-container p { color: #333; font-weight: 600; margin-top: 5px; }
-        .qr-box {
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-        }
-        .qr-img { width: 180px; height: 180px; object-fit: contain; }
-
-        .qr-extra-options { margin: 2rem 0; text-align: center; }
-        .qr-extra-options p { color: var(--text-secondary); margin-bottom: 1rem; }
-
-        .qr-mini-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-        }
-        .qr-mini-item {
-            background: #0f0f0f;
-            padding: 1rem;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-        .qr-mini-item p { color: #fff; font-weight: 600; margin-bottom: 0.5rem; }
-        .qr-mini-item img {
-            width: 100%;
-            max-width: 100px;
-            height: auto;
-            aspect-ratio: 1/1;
-            background: #fff;
-            border-radius: 8px;
-            padding: 5px;
-        }
-
-        .pix-key-info {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            background: rgba(0,0,0,0.3);
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .pix-key-info span { color: #fff; font-weight: 600; font-family: monospace; }
-
-        .modal-actions { margin-top: 2rem; text-align: center; }
-        .btn-secondary {
-            padding: 0.8rem 2rem;
-            background: transparent;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        .btn-secondary:hover { background: var(--primary-color); color: #fff; }
-
         /* === Footer === */
         footer {
             padding: 2rem 5%;
@@ -415,10 +294,7 @@
             
             .hero-text h1 { font-size: 2.5rem; }
             .hero-description { flex-direction: column; gap: 0.5rem; align-items: center; }
-            
             .premium-card { transform: scale(1); margin: 0 1rem; }
-            
-            .qr-mini-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* === Animações Globais === */
@@ -442,7 +318,7 @@
     <!-- Cabeçalho Fixo -->
     <header>
         <nav class="navbar">
-            <div class="logo">Julia Gostosa<span>.</span></div>
+            <div class="logo">Julia<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#benefits">Benefícios</a></li>
@@ -460,7 +336,6 @@
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <div class="hero-image-container">
-                    <!-- Substitua perfil.jpg pela sua foto -->
                     <img src="Screenshot_20260723_133600_TikTok.jpg" alt="Foto da Criadora" class="hero-img">
                 </div>
                 <div class="hero-text">
@@ -497,12 +372,11 @@
             </div>
         </section>
 
-        <!-- Seção Galeria (Imagens Desfocadas) - AQUI VOCÊ COLOCA AS 3 IMAGENS -->
-        <section id="Screenshot_20260723_133821_TikTok.jpg" class="section-container bg-dark">
+        <!-- Seção Galeria -->
+        <section id="gallery" class="section-container bg-dark">
             <h2 class="section-title">Prévia da Galeria</h2>
             <p class="section-subtitle">Desbloqueie o conteúdo completo assinando agora.</p>
             <div class="gallery-grid">
-                <!-- Coloquei os nomes img1.jpg até img4.jpg -->
                 <div class="gallery-item blur-effect">
                     <img src="Screenshot_20260723_133821_TikTok.jpg" alt="Conteúdo Privado 1">
                 </div>
@@ -515,7 +389,7 @@
             </div>
         </section>
 
-        <!-- Seção Planos -->
+        <!-- Seção Planos (Com o botão de redirecionamento) -->
         <section id="plans" class="section-container">
             <h2 class="section-title">Escolha Seu Plano</h2>
             <div class="plans-container">
@@ -529,7 +403,8 @@
                         <li><i class="fas fa-check"></i> Atualizações frequentes</li>
                         <li><i class="fas fa-check"></i> Sem taxas adicionais</li>
                     </ul>
-                    <button class="btn-primary btn-buy glow-effect" data-target="purchase-modal">Comprar Agora</button>
+                    <!-- Botão transformado em link indo direto para o site de pagamento -->
+                    <a href="https://qr-code-da-julia.vercel.app/" target="_blank" class="btn-primary btn-buy glow-effect">Comprar Agora</a>
                 </div>
             </div>
         </section>
@@ -548,61 +423,10 @@
         </div>
     </footer>
 
-    <!-- Modal de Pagamento -->
-    <div id="purchase-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Finalizar Assinatura</h2>
-            
-            <div class="payment-instructions">
-                <p>Escaneie o QR Code com o seu aplicativo bancário para pagar via PIX.</p>
-                
-                <!-- QR Code Principal (R$ 49,90) -->
-                <div class="qr-main-container">
-                    <h3>Plano Premium</h3>
-                    <p><strong>Valor: R$ 49,90</strong></p>
-                    <div class="qr-box">
-                        <!-- Substitua pela imagem do QR Code com o valor 49,90 -->
-                        <img src="qrcode_principal.png" alt="QR Code Principal" class="qr-img">
-                    </div>
-                </div>
-
-                <!-- Opções de pagamento com valores menores -->
-                <div class="qr-extra-options">
-                    <p>Quer fazer um pagamento parcial ou teste? Escolha um valor abaixo:</p>
-                    <div class="qr-mini-grid">
-                        <div class="qr-mini-item">
-                            <p>R$ 10,00</p>
-                            <img src="qrcode1.png" alt="QR Code 10,00">
-                        </div>
-                        <div class="qr-mini-item">
-                            <p>R$ 15,00</p>
-                            <img src="qrcode2.png" alt="QR Code 15,00">
-                        </div>
-                        <div class="qr-mini-item">
-                            <p>R$ 20,00</p>
-                            <img src="qrcode3.png" alt="QR Code 20,00">
-                        </div>
-                        <div class="qr-mini-item">
-                            <p>R$ 25,00</p>
-                            <img src="qrcode4.png" alt="QR Code 25,00">
-                        </div>
-                    </div>
-                </div>
-
-                <p class="pix-key-info">Chave Pix: <span>032.569.781-77</span></p>
-                <div class="modal-actions">
-                    <button class="btn-secondary" id="confirm-payment">Já efetuei o pagamento</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- JavaScript apenas para o menu mobile e animações -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // ======================================
-            // 1. Lógica do Menu Mobile
-            // ======================================
+            // Menu Mobile
             const menuToggle = document.getElementById('mobile-menu');
             const navLinks = document.querySelector('.nav-links');
 
@@ -622,9 +446,7 @@
                 });
             });
 
-            // ======================================
-            // 2. Lógica de Scroll Suave (Navegação)
-            // ======================================
+            // Scroll Suave
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -638,9 +460,7 @@
                 });
             });
 
-            // ======================================
-            // 3. Animações de Entrada (IntersectionObserver)
-            // ======================================
+            // Animação de entrada
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -648,52 +468,7 @@
                     }
                 });
             }, { threshold: 0.1 });
-
             document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-
-            // ======================================
-            // 4. Lógica do Modal (Abrir e Fechar)
-            // ======================================
-            const modal = document.getElementById('purchase-modal');
-            const buyBtn = document.querySelector('.btn-buy');
-            const closeBtn = document.querySelector('.close-modal');
-            const confirmBtn = document.getElementById('confirm-payment');
-
-            const openModal = () => {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            };
-
-            const closeModal = () => {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            };
-
-            if (buyBtn) buyBtn.addEventListener('click', openModal);
-            if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-            window.addEventListener('click', (event) => {
-                if (event.target === modal) closeModal();
-            });
-
-            // ======================================
-            // 5. Validação e Ação do Botão "Já paguei"
-            // ======================================
-            if (confirmBtn) {
-                confirmBtn.addEventListener('click', () => {
-                    confirmBtn.textContent = 'Verificando...';
-                    confirmBtn.disabled = true;
-                    confirmBtn.style.opacity = '0.7';
-
-                    setTimeout(() => {
-                        alert('Pagamento confirmado! Parabéns, acesso liberado. (Simulação).');
-                        closeModal();
-                        confirmBtn.textContent = 'Já efetuei o pagamento';
-                        confirmBtn.disabled = false;
-                        confirmBtn.style.opacity = '1';
-                    }, 2000);
-                });
-            }
         });
     </script>
 </body>
